@@ -1,0 +1,64 @@
+AppManager:
+	ArrayList<Trip>
+
+Trip 
+	String image
+	Date iniDate
+	String description
+	ArrayList<User>
+	ArrayList<Expense>
+
+User
+	String name
+	String email
+	String image
+
+Expense
+	String description
+	int amount
+	Date date
+	Position pos
+	Map<String, in> payers
+
+
+
+
+
+------------------Model de dades--------------
+- App conté llistat de viatges
+- Cada Viatge està composat per:
+	- Imatge de descripció (String)
+	- Descripció 
+	- Data d'inici.
+	- Llistat de participants.
+		- Nom.
+		- Email.
+		- Imatge (string)
+	- Llistat de gstos:
+		- descripció.
+		- quantitat.
+		- data.
+		- Pagadors:
+			- nom del pagador (és un membre dels participants)
+			- quantitat. 
+----------------------------------------------
+
+-------------Funcionalitat de l'app-----------
+- Llistar els viatges: ordenats per descripció / ordenats per data d'inici.
+	- (C) descripció / data d'inici.
+	- (A) imatge.
+- Eliminar els viatges.
+- Crear viatges.
+	- Introduir les dades del viatge
+	- Introdiur 
+- Modificar viatges.
+	- Modificar les dades del viatge (descripció, data o imarte).
+	- Introduir nou gasto.
+	
+- Obtenir resum del viatge:
+	- Llistat dels gastos.
+	- Resum general:
+		- Quantitat total gastda.
+		- Llistat per participant:
+			- Quant diners s'ha gastat 
+			- Quants diners se li deuen o quan deu.
