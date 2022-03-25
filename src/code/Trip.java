@@ -20,6 +20,18 @@ public class Trip {
 		this.expenses = new ArrayList<Expense>();
 	}
 	
+	public ArrayList<String> getUsersNames(){
+		ArrayList<String> nameUsers = new ArrayList<String>();
+		
+		for (User u : users) {
+			nameUsers.add(u.getName());
+		}
+		
+		return nameUsers;
+	}
+	
+	
+	
 	public String toString() {
 		String info = "{\n";
 		

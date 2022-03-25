@@ -14,6 +14,10 @@ public class User {
 		this.amount = 0;
 	}
 	
+	public void ResetAmount() {
+		amount = 0;
+	}
+	
 	public void AddAmountSpent(int amount) {
 		this.amount += amount;
 	}
